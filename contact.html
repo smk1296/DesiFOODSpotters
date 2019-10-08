@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+<!--
+	Wilmu checkmates
+-->
+
+	<meta charset="UTF-8" />
+	<title>Contact</title>
+	<script src="formsubmit.js"></script>
+	<link href="assets/css/rb.css" rel="stylesheet" />
+	<link href="assets/css/forms.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+
+		<header>
+		
+
+			<article>
+				<br>
+				<h1>Desifoodspotters</h1>
+				
+				
+
+				<p> Hello, welcome to Desifoodspotters. <em>“Desifoodspotter? Well, is it Desi Food Spotter? 
+											or Desi Foods' Potter?” </em>	</p>
+				<p>  
+                    <em>Guess what, it is both yaayyy!</em>
+				  
+											This website if for people who want to spot a desi 
+											food source around and also for those who make and 
+											want to sell some food pots.
+				</p>
+				<p>Our idea is to 
+											connect the cravings with availabilities. 
+											You can find availability of desi food around you.  <em>Yesss!!!</em>.
+				</p>
+			</article>
+		</header>
+
+		<section>
+			<p>Required values are marked by an asterisk (*)</p>
+
+			<form id="survey" name="survey"
+				action="images/flyer.jpg"
+				method="post">
+<!--				action="mailto:skandala002@my.wilmu.edu"-->
+				<fieldset id="custInfo">
+					<legend>Registration Information</legend>
+	
+					<label for="custname">Name *</label>
+					<input name="custname" id="custname" placeholder="first and last name" required="required"/>
+	
+					<label for="street">Phone number</label>
+					<input name="street" id="street" />
+	
+				
+	
+					<label for="state">Location</label>
+					<input name="state" id="state" value="AZ" />
+	
+					<label for="zip">Referal code</label>
+					<input name="zip" id="zip" placeholder="abcd (-abcd)" type="text"
+						pattern="^\d{5}(\-\d{4})?$" />
+	
+					<label for="phone">Phone number</label>
+					<input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+						pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+	
+					<label for="email">E-mail *</label>
+					<input name="email" id="email" type="email" required="required"   value="smk@gmail.com"  />
+				
+					<label>Where did you hear about us? <br />(select all that apply)</label>
+					<select name="infoSrc" id="infoSrc" size="5" multiple="multiple">
+						<option value="internet">Instagram</option>
+						<option value="mag">Magazine</option>
+						<option value="news">LinkedIn</option>
+						<option value="word">Snapchat</option>
+						<option value="other">Other</option>
+					</select>
+	
+					<label for="ordersPerMonth">How frequent do you order food</label>
+					<input name="ordersPerMonth" id="ordersPerMonth" type="number" value="1" min="0" max="10" step="1" />
+	
+					<label for="favDish">What's your favorite Food?</label>
+					<input name="favDish" id="favDish" list="dishType" />
+	
+					<datalist id="dishType">
+						<option value="Pulihora" />
+						<option value="Biryani" />
+						<option value="Sweets" />
+						<option value="Sambhar" />
+						<option value="Curries" />
+						<option value="Diet food" />
+						<option value="Diab Friendly" />
+						<option value="Desi Beverages" />
+					</datalist>
+				</fieldset>
+	
+				<fieldset id="experience">
+					<legend>Your suggestion or Orders for Desifoodspotters</legend>
+	
+				
+	
+					<label for="receipt">Desifoodspotters ID</label>
+					<input name="receipt" id="receipt" placeholder="re-nnnnnn" required="required"
+						pattern="^re\-\d{6}$" />
+		
+					<label for="ordertype">Event type</label>
+						<select name="ordertype" id="ordertype">
+							<option value="type1">Birthday</option>
+							<option value="type2">Weekend Party</option>
+							<option value="type3" selected="selected">Get together</option>
+							<option value="type4">Festival</option>
+						</select>
+	
+					<label>Would you refer Desifoodspotter to your friends?</label>
+					<fieldset class="optionGroup">
+						<label for="sYes">Yes</label>
+						<input type="radio" name="serviceFriendly" id="sYes" value="yes" />
+	
+						<label for="sNo">No</label>
+						<input type="radio" name="serviceFriendly" id="sNo" value="no" />
+					</fieldset>
+
+					
+					
+	
+				
+					<label>Rate your experience<br /> (0 = poor; 10 = great)</label>
+	
+					<label class="sliderLabel">0</label>
+					<input name="service" id="service" type="range" value="5" min="0" max="10" step="1" />
+	
+				
+	
+					<label class="sliderLabel">10</label>
+					<label for="comments ">Tell us more about your experience or suggestions!</label>
+	
+					<textarea name="comments" id="comments"></textarea>
+				</fieldset>
+	
+				<label id="newsletter">
+					<input type="checkbox" name="newsch" />
+						E-mail me for upcoming Events!
+				</label>
+
+				<p>
+					<input type="submit" value="Register Me" />
+					<input type="reset" value="Cancel" />
+				</p>
+			</form>
+	
+		</section>
+
+		<footer>
+			<br>
+			<address>
+				Desifoodspotters &bull;
+				In the heart of food &bull;
+				Nomanstreet, Delaware 19702.  &bull;
+				<br>
+				<br>
+				
+			</address>
+		</footer>
+<!--
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x = document.getElementById("survey");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+-->
+	</body>
+
+</html>
